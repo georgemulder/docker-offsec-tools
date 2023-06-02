@@ -5,12 +5,12 @@ COPY install.sh /
 RUN bash /install.sh
 
 LABEL maintainer="georgemulder" \
-	version="0.0.1" \
+	version="0.0.2" \
 	url="https://hub.docker.com/r/georgemulder/sliver" \
-	source="https://github.com/georgemulder/sliver"
+	source="https://github.com/georgemulder/docker-offsec-tools"
 
 EXPOSE 31337/tcp
-EXPOSE 8080/tcp
+EXPOSE 8888/tcp
 EXPOSE 80/tcp
 EXPOSE 443/tcp
 
