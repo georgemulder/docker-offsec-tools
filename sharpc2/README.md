@@ -2,11 +2,13 @@
 Docker image build for https://github.com/rasta-mouse/SharpC2
 
 # Build
-Execute build.sh script
+Write your desired TeamServer password in a file called tspwd and execute build.sh script
 ```
+echo 'Passw0rd_ > tspwd'
 chmod +x build.sh
-./build.sh [<password>]
+DOCKER_BUILDKIT=1 ./build.sh
 ```
+If you have issues with BuildKit, check this out: https://docs.docker.com/build/buildkit/
 
 # Execution
 ```

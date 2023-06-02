@@ -1,8 +1,2 @@
 #!/bin/bash
-
-if [ $# -ge 1 ]
-then
-	docker build --build-arg PASSWORD=$1 -t georgemulder/sharpc2 .
-else
-	docker build -t georgemulder/sharpc2 .
-fi
+docker build --secret id=tspwd,src=$(pwd)/tspwd -t georgemulder/sharpc2 .
