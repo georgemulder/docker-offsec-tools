@@ -5,7 +5,7 @@ COPY install.sh /
 RUN bash /install.sh
 
 LABEL maintainer="georgemulder" \
-	version="0.0.3" \
+	version="0.0.4" \
 	url="https://hub.docker.com/r/georgemulder/sharpc2" \
 	source="https://github.com/georgemulder/docker-offsec-tools"
 

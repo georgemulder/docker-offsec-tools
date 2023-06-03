@@ -6,8 +6,7 @@ tar xvfzp /opt/teamserver-linux.tar.gz -C /opt/
 
 apt-get autoclean -y;apt-get clean -y
 
-echo -n "IyEvYmluL2Jhc2gKSVA9JChob3N0bmFtZSAtSSkKbm9odXAgL29wdC9TaGFycEMyL1RlYW1TZXJ2ZXIgJElQIFBMQUNFSE9MREVSICYKdG9wCgo=" | base64 -d > /run.sh
+echo -n "IyEvYmluL2Jhc2gKSVA9JChob3N0bmFtZSAtSSkKY2QgL29wdC9TaGFycEMyCm5vaHVwIC9vcHQvU2hhcnBDMi9UZWFtU2VydmVyICRJUCBQTEFDRUhPTERFUiAmCnRvcAoK" | base64 -d > /run.sh
 echo -n "IyEvYmluL2Jhc2ggCmN1cmwgLXYgaHR0cDovL2xvY2FsaG9zdDo1MDA1MCAyPiYxIHxncmVwIENvbm5lY3RlZCB8fCBleGl0IDEK" |base64 -d > /healthcheck.sh
 
 chmod 700 /run.sh /healthcheck.sh /opt/SharpC2/TeamServer
-ln -s /opt/SharpC2/C2Profiles/ /C2Profiles
