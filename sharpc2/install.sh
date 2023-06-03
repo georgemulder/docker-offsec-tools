@@ -10,3 +10,4 @@ echo -n "IyEvYmluL2Jhc2gKSVA9JChob3N0bmFtZSAtSSkKbm9odXAgL29wdC9TaGFycEMyL1RlYW1
 echo -n "IyEvYmluL2Jhc2ggCmN1cmwgLXYgaHR0cDovL2xvY2FsaG9zdDo1MDA1MCAyPiYxIHxncmVwIENvbm5lY3RlZCB8fCBleGl0IDEK" |base64 -d > /healthcheck.sh
 
 chmod 700 /run.sh /healthcheck.sh /opt/SharpC2/TeamServer
+ln -s /opt/SharpC2/C2Profiles/ /C2Profiles
